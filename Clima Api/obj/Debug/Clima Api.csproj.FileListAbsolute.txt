@@ -1,0 +1,13 @@
+C:\Users\Admin\source\repos\Clima Api\Clima Api\bin\Debug\Clima Api.exe.config
+C:\Users\Admin\source\repos\Clima Api\Clima Api\bin\Debug\Clima Api.exe
+C:\Users\Admin\source\repos\Clima Api\Clima Api\bin\Debug\Clima Api.pdb
+C:\Users\Admin\source\repos\Clima Api\Clima Api\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\Clima Api\Clima Api\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima_Api.Form1.resources
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima_Api.Properties.Resources.resources
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.csproj.GenerateResource.cache
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.csproj.CopyComplete
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.exe
+C:\Users\Admin\source\repos\Clima Api\Clima Api\obj\Debug\Clima Api.pdb
