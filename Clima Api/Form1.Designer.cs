@@ -31,7 +31,6 @@ namespace Clima_Api
         {
             this.lbDetalle = new System.Windows.Forms.Label();
             this.lbCondicion = new System.Windows.Forms.Label();
-            this.picIcon = new System.Windows.Forms.PictureBox();
             this.lbpuestadelsol = new System.Windows.Forms.Label();
             this.lbpresion = new System.Windows.Forms.Label();
             this.lbviento = new System.Windows.Forms.Label();
@@ -39,9 +38,7 @@ namespace Clima_Api
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnbuscar = new System.Windows.Forms.Button();
             this.txtCiudad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,7 +51,6 @@ namespace Clima_Api
             this.label6 = new System.Windows.Forms.Label();
             this.lbtemperatura = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,7 +60,7 @@ namespace Clima_Api
             this.lbDetalle.BackColor = System.Drawing.Color.Transparent;
             this.lbDetalle.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDetalle.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbDetalle.Location = new System.Drawing.Point(212, 172);
+            this.lbDetalle.Location = new System.Drawing.Point(201, 83);
             this.lbDetalle.Name = "lbDetalle";
             this.lbDetalle.Size = new System.Drawing.Size(0, 23);
             this.lbDetalle.TabIndex = 33;
@@ -75,19 +71,10 @@ namespace Clima_Api
             this.lbCondicion.BackColor = System.Drawing.Color.Transparent;
             this.lbCondicion.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCondicion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbCondicion.Location = new System.Drawing.Point(195, 149);
+            this.lbCondicion.Location = new System.Drawing.Point(184, 60);
             this.lbCondicion.Name = "lbCondicion";
             this.lbCondicion.Size = new System.Drawing.Size(0, 23);
             this.lbCondicion.TabIndex = 32;
-            // 
-            // picIcon
-            // 
-            this.picIcon.BackColor = System.Drawing.Color.Transparent;
-            this.picIcon.Location = new System.Drawing.Point(68, 64);
-            this.picIcon.Name = "picIcon";
-            this.picIcon.Size = new System.Drawing.Size(100, 50);
-            this.picIcon.TabIndex = 31;
-            this.picIcon.TabStop = false;
             // 
             // lbpuestadelsol
             // 
@@ -95,7 +82,7 @@ namespace Clima_Api
             this.lbpuestadelsol.BackColor = System.Drawing.Color.Transparent;
             this.lbpuestadelsol.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbpuestadelsol.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbpuestadelsol.Location = new System.Drawing.Point(195, 250);
+            this.lbpuestadelsol.Location = new System.Drawing.Point(184, 161);
             this.lbpuestadelsol.Name = "lbpuestadelsol";
             this.lbpuestadelsol.Size = new System.Drawing.Size(49, 23);
             this.lbpuestadelsol.TabIndex = 30;
@@ -131,7 +118,7 @@ namespace Clima_Api
             this.lbamanecer.BackColor = System.Drawing.Color.Transparent;
             this.lbamanecer.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbamanecer.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbamanecer.Location = new System.Drawing.Point(195, 203);
+            this.lbamanecer.Location = new System.Drawing.Point(184, 114);
             this.lbamanecer.Name = "lbamanecer";
             this.lbamanecer.Size = new System.Drawing.Size(49, 23);
             this.lbamanecer.TabIndex = 27;
@@ -144,7 +131,7 @@ namespace Clima_Api
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(51, 203);
+            this.label9.Location = new System.Drawing.Point(40, 114);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(103, 23);
             this.label9.TabIndex = 26;
@@ -174,41 +161,17 @@ namespace Clima_Api
             this.label7.TabIndex = 24;
             this.label7.Text = "Presion";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(56, 172);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 23);
-            this.label4.TabIndex = 23;
-            this.label4.Text = "Detalle";
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(51, 250);
+            this.label3.Location = new System.Drawing.Point(40, 161);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(140, 23);
             this.label3.TabIndex = 22;
             this.label3.Text = "Puesta del sol";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(56, 149);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 23);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Condicion";
             // 
             // btnbuscar
             // 
@@ -246,7 +209,7 @@ namespace Clima_Api
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(51, 297);
+            this.label5.Location = new System.Drawing.Point(40, 208);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(99, 23);
             this.label5.TabIndex = 34;
@@ -258,7 +221,7 @@ namespace Clima_Api
             this.lbhumidity.BackColor = System.Drawing.Color.Transparent;
             this.lbhumidity.Font = new System.Drawing.Font("Mongolian Baiti", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbhumidity.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lbhumidity.Location = new System.Drawing.Point(195, 297);
+            this.lbhumidity.Location = new System.Drawing.Point(184, 208);
             this.lbhumidity.Name = "lbhumidity";
             this.lbhumidity.Size = new System.Drawing.Size(49, 23);
             this.lbhumidity.TabIndex = 35;
@@ -345,11 +308,9 @@ namespace Clima_Api
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.btnbuscar);
             this.groupBox1.Controls.Add(this.lbtempmax);
-            this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.lbtempmin);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.lbhumidity);
@@ -360,7 +321,6 @@ namespace Clima_Api
             this.groupBox1.Controls.Add(this.lbamanecer);
             this.groupBox1.Controls.Add(this.lbCondicion);
             this.groupBox1.Controls.Add(this.lbviento);
-            this.groupBox1.Controls.Add(this.picIcon);
             this.groupBox1.Controls.Add(this.lbpresion);
             this.groupBox1.Controls.Add(this.lbpuestadelsol);
             this.groupBox1.Location = new System.Drawing.Point(116, 27);
@@ -369,6 +329,7 @@ namespace Clima_Api
             this.groupBox1.TabIndex = 42;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // Form1
             // 
@@ -380,7 +341,6 @@ namespace Clima_Api
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.picIcon)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -391,7 +351,6 @@ namespace Clima_Api
 
         private System.Windows.Forms.Label lbDetalle;
         private System.Windows.Forms.Label lbCondicion;
-        private System.Windows.Forms.PictureBox picIcon;
         private System.Windows.Forms.Label lbpuestadelsol;
         private System.Windows.Forms.Label lbpresion;
         private System.Windows.Forms.Label lbviento;
@@ -399,9 +358,7 @@ namespace Clima_Api
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnbuscar;
         private System.Windows.Forms.TextBox txtCiudad;
         private System.Windows.Forms.Label label1;

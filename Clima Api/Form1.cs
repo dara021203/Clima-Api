@@ -9,6 +9,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Domain.Entities;
 
 namespace Clima_Api
 {
@@ -32,15 +33,17 @@ namespace Clima_Api
                 string url = string.Format("https://api.openweathermap.org/data/2.5/weather?q={0}&appid={1}", txtCiudad.Text, APIKey);
 
                 var json = web.DownloadString(url);
-                Informacion.Root info = JsonConvert.DeserializeObject<Informacion.Root>(json);
+                Clima info = JsonConvert.DeserializeObject<Clima>(json);
 
                 lbpuestadelsol.Text = convertdatetime(info.sys.sunset).ToShortTimeString();
                 lbamanecer.Text = convertdatetime(info.sys.sunrise).ToShortTimeString();
-                lbviento.Text = info.wind.speed.ToString();
+                lbviento.Text = (info.wind.speed * 3.6).ToString();
                 lbpresion.Text = info.main.pressure.ToString();
+                lbtemperatura.Text = (info.main.temp - 273.15).ToString();
                 lbtempmin.Text = (info.main.temp_min - 273.15).ToString();
                 lbtempmax.Text = (info.main.temp_max - 273.15).ToString();
-                lbtemperatura.Text = (info.main.temp_min - 273.15).ToString();
+                
+                lbhumidity.Text = info.main.humidity.ToString();
             }
         }
         DateTime convertdatetime(long sec)
@@ -56,6 +59,11 @@ namespace Clima_Api
         }
 
         private void lbamanecer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
         }
