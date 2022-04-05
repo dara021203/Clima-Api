@@ -1,4 +1,5 @@
-﻿using OpenWeatherAPI.Domain.Entities.Climate;
+﻿using Clima_Api;
+using OpenWeatherAPI.Domain.Entities.Climate;
 using System;
 using System.Collections.Generic;
 using System.Text;
