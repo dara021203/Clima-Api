@@ -25,6 +25,11 @@ namespace Clima_Api
         {
 
         }
+        public double temp(double temperatura)
+        {
+            double temp = temperatura - 273.15;
+            return temp;
+        }
         void Busqueda()
         {
             using (WebClient web = new WebClient())
@@ -39,10 +44,15 @@ namespace Clima_Api
                 lbamanecer.Text = convertdatetime(info.sys.sunrise).ToShortTimeString();
                 lbviento.Text = (info.wind.speed * 3.6).ToString();
                 lbpresion.Text = info.main.pressure.ToString();
-                lbtemperatura.Text = (info.main.temp - 273.15).ToString();
-                lbtempmin.Text = (info.main.temp_min - 273.15).ToString();
-                lbtempmax.Text = (info.main.temp_max - 273.15).ToString();
-                
+                double temperatura = Convert.ToDouble(info.main.temp.ToString());
+
+                double temperaturamin = Convert.ToDouble(info.main.temp_min.ToString());
+
+                double temperaturamax = Convert.ToDouble(info.main.temp_max.ToString());
+
+                lbtemperatura.Text = Convert.ToString(temp(temperatura));
+                lbtempmin.Text = Convert.ToString(temp(temperaturamin));
+                lbtempmax.Text = Convert.ToString(temp(temperaturamax));
                 lbhumidity.Text = info.main.humidity.ToString();
             }
         }
@@ -52,10 +62,11 @@ namespace Clima_Api
             day = day.AddSeconds(sec).ToLocalTime();
             return day;
         }
-
+       
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             Busqueda();
+           
         }
 
         private void lbamanecer_Click(object sender, EventArgs e)
