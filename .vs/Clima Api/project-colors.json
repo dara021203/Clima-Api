@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c432f4da-8c9c-4eb8-a5b8-cb9165007694": {
+      "ProjectGuid": "c432f4da-8c9c-4eb8-a5b8-cb9165007694",
+      "DisplayName": "Clima Api",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

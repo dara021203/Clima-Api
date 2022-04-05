@@ -38,6 +38,9 @@ namespace Clima_Api
                 lbamanecer.Text = convertdatetime(info.sys.sunrise).ToShortTimeString();
                 lbviento.Text = info.wind.speed.ToString();
                 lbpresion.Text = info.main.pressure.ToString();
+                lbtempmin.Text = (info.main.temp_min - 273.15).ToString();
+                lbtempmax.Text = (info.main.temp_max - 273.15).ToString();
+                lbtemperatura.Text = (info.main.temp_min - 273.15).ToString();
             }
         }
         DateTime convertdatetime(long sec)
@@ -50,6 +53,11 @@ namespace Clima_Api
         private void btnbuscar_Click(object sender, EventArgs e)
         {
             Busqueda();
+        }
+
+        private void lbamanecer_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
